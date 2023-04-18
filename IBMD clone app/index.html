@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Movie Carnival</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png"/>
+    <!-- Font Awesome -->
+    <script
+    src="https://kit.fontawesome.com/a8162db7fd.jscrossorigin="anonymous">
+   </script>
+   <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <!-- NaBar-->
+    <nav class="navbar bg -dark px-2 sticky-top">
+      <div class="container-fluid justify- content-start">
+        <a class="navbar-brand" href="#">
+        <img src="C:\Users\TOSHIBA\Downloads\favicon.png"
+           alt=""
+           width = "45"
+           height = "45"
+           class = "d-inline-block align-text-top"
+           />
+           <span class = "pt-4 site-name animate_animated animate_rubberBand">
+             Movie Carnival</span>
+           </a>
+           <!--Search Bar-->
+           <div id="search-bar" class="mx-auto">
+             <form action="" autocomplete="off">
+               <input type="search"
+                      placeholder ="Search"
+                      id="search"
+                      autocomplete="off"
+                      />
+                      <button id = "search-btn">
+                        <i class = "fa-solid fa-magnifying-glass search-icon"></i>
+                      </button>
+                    </form>
+                  </div>
+                  <div id="show-favorites"><i class="fa-solid fa-bars"></i></div>
+                </div>
+              </nav>
+
+              <div id="super-container" class="d-flex justify-content-between">
+                <!--MAIN SECTION-->
+                <main id="main-section">
+                  <!--Suggetion Container-->
+                  <div id="Suggestion-continer" class="d-flex">
+                    <p id = "empty-search-text" class="text-muted fs-1 pt-5 ms-4">
+                      Your search box will appear here </p>
+                      <div id = "card-container">
+                        <a href = "movie.html" data-id = "spider-man" class="text-decoration">
+                          <div class="card my-2" data-id="spider-man">
+                            <img   class = "card-image-top"data-id = "spider-man"
+                             src="C:\Users\TOSHIBA\Downloads\home_page.png">
+
+
+                                 />
+                                 <div class="card-body text-start">
+                                   <h5 class="card-title">
+                                     <a href="movie.html" data-id="spider-man">spider-man</a>
+                                   </h5>
+                                   <p class = "card-text">
+                                     <i class = "fa-solid fa-star">
+                                       <span id = "rating">&nbsp;7.8</span>
+                                     </i>
+                                     <button class="fav-btn">
+                                       <i class = "fa-solid fa-heart"></i>
+                                     </button>
+                                   </p>
+                                 </div>
+                               </a>
+                             </div>
+                           </div>
+                         </main>
+ <!--Favorites Section-->
+ <section id="favorits-section" class="animate_animated">
+   <h2 Favorites</h2>
+      <div id="empty-fav-text">
+        <p class = "fs-5 mx-3 text-muted">
+          Click on <i class = "fa-heart fa-solid text-muted"></i>ico of movues to add.</p>
+        </div>
+        < div id="fav-movie-card d-flex justify-content between align-content-center my-2"
+        >
+        <img src="C:\Users\TOSHIBA\Downloads\logo.png"
+             alt=""
+             class="fav-movie-poster"
+             />
+             <div class="movie-card-details">
+               <p class="movie-name mt-3 mb-0">
+                 spider-man:No way home</p>
+                 <small class="text-muted">2018</small>
+               </div>
+
+               <div class="delete-btn">
+                 <i class="fa-solid fa-trash-can" data-id="spider-man"></i>
+               </div>
+             </div>
+           </div>
+         </section>
+         <section>
+           <nav class="navbar navbar-dark bg-dark px-2">
+             <div class="container-fluid">
+               <a class="navbar-brand" href="/index.html">
+                 <img src="C:\Users\TOSHIBA\Downloads\logo.png
+                      alt=""
+                      width="45"
+                      height="45"
+                      class="d-inline-blocl-align-top"/>
+                      <span class="pt-4 site-name">Movie Carnival</span>
+                      </a>
+                      <a href = "index.html">
+                        <button type="button" class="btn btn-warning">
+                          <i class="fa-solid fa-angle-left"></i>Go back</button>
+                          </a>
+                          </div>
+                          </nav>
+                          <!-- MAIN Container-->
+                          <main class="container-fluid justify-content-center my-4">
+                            <!--title and rating container-->
+                            < div class="d-flex justify-content between align-center mx-auto "
+                                  style="max-width:700vw"
+                                  >
+                                  <div>
+                                    <h1 id="title">Movie name</h1>
+                                    <p id="year" class="text-info d-inline-block">---</p>
+                                    <span id="runtime" class="ms-4 text-info">--min</span>
+                                    </div>
+                                    <div class="card mb-3 mx-auto animate_animated animate_backInDown"
+                                    style="max-width:70vw"
+                                    >
+                                    < div class="row g-0">
+                                    <div class="col-md-3 d-flex justify-content-center justify-content-1g-start"
+                                    >
+                                    <img src="C:\Users\TOSHIBA\Downloads\movie_page.png"
+                                    id="poster"
+                                    class="img-fluid rounded-start"
+                                    style="max-height:400px"
+                                    />
+                                    </div>
+                                    <div class = "col-md-8 my-2">
+                                      <div class="card-body mt-3">
+                                        <h5 class="card-title">PLOT</h5>
+                                        <p class="card-text" id="plot">___</p>
+                                        <p class="info-type">
+                                          Cast :
+                                          <span id="cast-name" class="information">___</span>
+                                          </p>
+                                          <p class="info-type">
+                                            Genre :
+                                            <span id="genre" class="information">___</span>
+                                            </p>
+                                            </div>
+                                            </div>
+                                            </div>
+
+
+
+
+
+
+
+
+
+
+
+         </section>
+
+         <script src="script.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
